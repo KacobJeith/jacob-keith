@@ -7,7 +7,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
-import PortfolioItemCard from './components/PortfolioItemCard.jsx'
+import Portfolio from './components/Portfolio.jsx'
 import reducers from './redux/reducers.js'
 
 
@@ -21,8 +21,8 @@ render(
   <Provider store={store}>
     <Router >
     	<div >
-    		<Route exact path="/" component={PortfolioItemCard}/>
-    		<Route exact path="/portfolio" component={PortfolioItemCard}/>
+    		<Route exact path="/" component={Portfolio}/>
+    		<Route exact path="/portfolio" component={Portfolio}/>
     	</div>
 	</Router>
   </Provider>,
