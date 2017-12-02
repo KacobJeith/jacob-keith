@@ -11,13 +11,12 @@ const mapStateToProps = (state) => ({
 class PortfolioItemCard extends Component {
 
   render() {
-    console.log(this.props.markers);
 
     var inputs = {
       card: {
         style: {
           width: 300,
-          height: 300
+          height: 300,
           backgroundColor: 'blue',
           margin: 20
         }
